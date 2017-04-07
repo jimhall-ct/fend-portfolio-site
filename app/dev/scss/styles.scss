@@ -82,10 +82,10 @@ header {
     color: $color-person-title;
     font-size: 1.1rem;
     font-weight: 300;
-    letter-spacing: .125rem;
+    letter-spacing: 0.125rem;
 
     @media(max-width: $bp-sm) {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -141,7 +141,7 @@ header {
     .feature-title {
         text-transform: uppercase;
 
-        @media(min-width:$bp-md) {
+        @media(min-width: $bp-md) {
             text-transform: none;
         }
     }
@@ -153,6 +153,7 @@ header {
 .feature-group {
     padding: 0 8px;
 }
+
 /* Feature Work items */
 .feature-item {
     margin-bottom: 1.5rem;
@@ -161,12 +162,12 @@ header {
         width: 100%;
     }
     h4 {
-        margin-top: .25rem;
+        margin-top: 0.25rem;
         margin-bottom: 0;
     }
     a {
         @media(max-width: $bp-lg) {
-            font-size: .9rem;
+            font-size: 0.9rem;
         }
     }
 }
