@@ -13,28 +13,9 @@ header {
     border-bottom: 2px solid #efdb10;
 }
 
-@media (max-width: 576px) {
-    .logo-wrapper {
-        padding-left: 8px;
-    }
-}
-
 .logo {
     width: 72px;
     margin: 15px 0;
-}
-
-@media (max-width: 576px) {
-    .logo {
-        width: 48px;
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 576px) {
-    .person {
-        padding-right: 8px;
-    }
 }
 
 .person-name {
@@ -45,13 +26,6 @@ header {
     margin-bottom: 5px;
 }
 
-@media (max-width: 576px) {
-    .person-name {
-        font-size: 1.5rem;
-        margin-top: 10px;
-    }
-}
-
 .person-title {
     color: #888;
     font-size: 1.1rem;
@@ -59,13 +33,6 @@ header {
     letter-spacing: 0.125rem;
 }
 
-@media (max-width: 576px) {
-    .person-title {
-        font-size: 0.8rem;
-    }
-}
-
-/* Main image of home page */
 .hero {
     height: 50vh;
     min-height: 180px;
@@ -74,23 +41,6 @@ header {
     margin-bottom: 15px;
 }
 
-@media (min-width: 360px) {
-    .hero {
-        min-height: 320px;
-        max-height: 400px;
-        background: url("../img/water_sunset_768.png") #ddd center/cover no-repeat;
-    }
-}
-
-@media (min-width: 992px) {
-    .hero {
-        min-height: 350px;
-        max-height: 570px;
-        background: url("../img/water_sunset_1200.png") #ddd center/cover no-repeat;
-    }
-}
-
-/* Main quote of home page */
 .quote {
     font-size: 1rem;
     color: #aaa;
@@ -99,77 +49,32 @@ header {
     margin: 1em 0;
 }
 
-@media (min-width: 576px) {
-    .quote {
-        font-size: 1.25rem;
-        margin: 1em 1em;
-    }
-}
-
-@media (min-width: 768px) {
-    .quote {
-        font-size: 1.25rem;
-        margin: 1em 2em;
-    }
-}
-
-@media (min-width: 992px) {
-    .quote {
-        margin: 2em 5em;
-    }
-}
-
-@media (min-width: 1200px) {
-    .quote {
-        font-size: 1.5rem;
-    }
-}
-
 .feature-work {
     margin: 0 -15px;
     padding: 0 15px;
     background-color: #f1ecc1;
 }
 
-.feature-work .feature-title {
-    text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-    .feature-work .feature-title {
-        text-transform: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .feature-work {
-        background-color: inherit;
-    }
-}
-
 .feature-group {
     padding: 0 8px;
 }
 
-/* Feature Work items */
+.feature-group-title {
+    text-transform: uppercase;
+}
+
 .feature-item {
     margin-bottom: 1.5rem;
     padding: 0 7px;
 }
 
-.feature-item img {
+.feature-item-img {
     width: 100%;
 }
 
-.feature-item h4 {
+.feature-item-title {
     margin-top: 0.25rem;
     margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-    .feature-item a {
-        font-size: 0.9rem;
-    }
 }
 
 footer {
@@ -177,4 +82,81 @@ footer {
     color: #888;
     background: #222;
     border-top: 2px solid #888;
+}
+
+/* MEDIA QUERIES */
+
+/* Bootstrap xs breakpoint */
+@media (min-width: 360px) {
+    .hero {
+        min-height: 320px;
+        max-height: 400px;
+        background: url("../img/water_sunset_768.png") #ddd center/cover no-repeat;
+    }
+}
+
+/* Bootstrap sm breakpoint */
+@media (max-width: 576px) {
+    .logo-wrapper {
+        padding-left: 8px;
+    }
+
+    .logo {
+        width: 48px;
+        margin: 10px 0;
+    }
+
+    .person-name {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .person-title {
+        font-size: 0.8rem;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+        margin: 1em 1em;
+    }
+}
+
+/* Bootstrap md breakpoint */
+@media (min-width: 768px) {
+    .quote {
+        font-size: 1.25rem;
+        margin: 1em 2em;
+    }
+
+    .feature-group-title {
+        text-transform: none;
+    }
+
+    .feature-work {
+        background-color: inherit;
+    }
+}
+
+/* Bootstrap lg breakpoint */
+@media (min-width: 992px) {
+    .hero {
+        min-height: 350px;
+        max-height: 570px;
+        background: url("../img/water_sunset_1200.png") #ddd center/cover no-repeat;
+    }
+
+    .quote {
+        margin: 2em 5em;
+    }
+
+    .feature-item-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* Bootstrap xl breakpoint */
+@media (min-width: 1200px) {
+    .quote {
+        font-size: 1.5rem;
+    }
 }
