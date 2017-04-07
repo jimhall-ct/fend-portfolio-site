@@ -96,7 +96,7 @@ footer {
 }
 
 /* Bootstrap sm breakpoint */
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .logo-wrapper {
         padding-left: 8px;
     }
