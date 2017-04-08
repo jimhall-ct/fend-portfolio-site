@@ -1,4 +1,8 @@
-/* TABLE OF CONTENTS
+/*
+ * MOBILE FIRST CSS
+ * Default Styles Target: Small Mobile Devices
+ *
+ * TABLE OF CONTENTS
  * -----------------
  * - 1:GLOBAL
  * - 2:HEADER
@@ -9,10 +13,9 @@
  *
  * - MEDIA QUERIES
  */
-/* MOBILE FIRST CSS
- * Default Styles are targeted to small mobile devices
- */
-/* 1:GLOBAL STYLES */
+/************************************************
+ * 1:GLOBAL STYLES
+ ************************************************/
 body {
     background: #333;
     color: #333;
@@ -23,7 +26,9 @@ body {
     background: #eee;
 }
 
-/* 2:HEADER STYLES */
+/************************************************
+ * 2:HEADER STYLES
+ ************************************************/
 header {
     background: #222;
     border-bottom: 2px solid #efdb10;
@@ -57,7 +62,9 @@ header {
     letter-spacing: 0.125rem;
 }
 
-/* 3:HERO IMAGE STYLES */
+/************************************************
+ * 3:HERO IMAGE STYLES
+ ************************************************/
 .hero {
     background: url("../img/water_sunset_360.png") #ddd center/cover no-repeat;
     height: 50vh;
@@ -73,7 +80,9 @@ header {
     text-shadow: 0 0 4px rgba(255, 255, 0, 0.9);
 }
 
-/* 4:MAIN QUOTE STYLES */
+/************************************************
+ * 4:MAIN QUOTE STYLES
+ ************************************************/
 .quote {
     color: #aaa;
     font-size: 1rem;
@@ -82,7 +91,9 @@ header {
     margin: 1em 0;
 }
 
-/* 5:FEATURE WORK STYLES */
+/************************************************
+ * 5:FEATURE WORK STYLES
+ ************************************************/
 .feature-work {
     background-color: #f1ecc1;
     margin: 0 -15px;
@@ -111,7 +122,9 @@ header {
     margin-top: 0.25rem;
 }
 
-/* 6:FOOTER STYLES */
+/************************************************
+ * 6:FOOTER STYLES
+ ************************************************/
 footer {
     background: #222;
     border-top: 2px solid #888;
@@ -119,18 +132,23 @@ footer {
     font-size: .85rem;
 }
 
-/* - MEDIA QUERIES
- * - 1:xs 360px
- * - 2:sm 576px
- * - 3:md 768px
- * - 4:lg 992px
- * - 5:xl 1200px
+/*
+ * MEDIA QUERIES
+ *
+ * BOOTSTRAP BREAKPOINTS
+ * xs 360px
+ * sm 576px
+ * md 768px
+ * lg 992px
+ * xl 1200px
  */
-/* 1:xs 360px */
+/************************************************
+ * BOOTSTRAP BREAKPOINT - xs
+ ************************************************/
 @media (min-width: 360px) {
     .hero {
-        background: url("../img/water_sunset_768.png") #ddd center/cover no-repeat;
-        max-height: 400px;
+        background: url("../img/water_sunset_576.png") #ddd center/cover no-repeat;
+        max-height: 360px;
         min-height: 200px;
     }
 
@@ -145,7 +163,9 @@ footer {
     }
 }
 
-/* 2:sm 576px */
+/************************************************
+ * BOOTSTRAP BREAKPOINT - xs
+ ************************************************/
 @media (min-width: 576px) {
     .logo-wrapper {
         padding-left: 15px;
@@ -177,6 +197,12 @@ footer {
         min-height: 350px;
     }
 
+    .hero {
+        background: url("../img/water_sunset_768.png") #ddd center/cover no-repeat;
+        max-height: 400px;
+        min-height: 260px;
+    }
+
     .hero-text {
         font-size: 4.50rem;
         text-shadow: 0 0 8px rgba(255, 255, 0, 0.9);
@@ -188,7 +214,9 @@ footer {
     }
 }
 
-/* 3:md 768px */
+/************************************************
+ * BOOTSTRAP BREAKPOINT - md
+ ************************************************/
 @media (min-width: 768px) {
     .hero {
         background: url("../img/water_sunset_1200.png") #ddd center/cover no-repeat;
@@ -215,7 +243,9 @@ footer {
     }
 }
 
-/* 4:lg 992px */
+/************************************************
+ * BOOTSTRAP BREAKPOINT - lg
+ ************************************************/
 @media (min-width: 992px) {
     .hero-text {
         font-size: 6rem;
@@ -232,7 +262,9 @@ footer {
     }
 }
 
-/* 5:xl 1200px */
+/************************************************
+ * BOOTSTRAP BREAKPOINT - xl
+ ************************************************/
 @media (min-width: 1200px) {
     .hero-text {
         font-size: 7rem;
