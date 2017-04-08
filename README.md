@@ -18,5 +18,6 @@ Development files
 Production files
 ### Notes
 * Bootstrap 4 loaded using CDN
-* srcset attributes used to load correct file size
+* img srcset attributes used to load correct file size
+* img sizes attribute with media queries
 * Production files have been non-minified and reformatted to comply with review
