@@ -1,6 +1,7 @@
 # Portfolio Site
 Udacity Front-End Developer Project #4
-
+### Reviewer
+Files for review in /prod
 ### Workflow
 Using a development/production workflow which uses:
 * SASS preprocessing
@@ -14,5 +15,5 @@ Development files
 #### /prod
 Production files
 ### Notes
-Bootstrap 4 loaded using CDN
-srcset attributes used to load correct file size
+* Bootstrap 4 loaded using CDN
+* srcset attributes used to load correct file size
