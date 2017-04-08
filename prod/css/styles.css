@@ -1,0 +1,277 @@
+/*
+ * MOBILE FIRST CSS
+ * Default Styles Target: Small Mobile Devices
+ *
+ * TABLE OF CONTENTS
+ * -----------------
+ * - 1:GLOBAL
+ * - 2:HEADER
+ * - 3:HERO IMAGE
+ * - 4:MAIN QUOTE
+ * - 5:FEATURED WORK
+ * - 6:FOOTER
+ *
+ * - MEDIA QUERIES
+ */
+/************************************************
+ * 1:GLOBAL STYLES
+ ************************************************/
+body {
+    background: #333;
+    color: #333;
+    font-family: Lato, Arial, sans-serif;
+}
+
+.page {
+    background: #eee;
+}
+
+/************************************************
+ * 2:HEADER STYLES
+ ************************************************/
+header {
+    background: #222;
+    border-bottom: 2px solid #efdb10;
+}
+
+.logo-wrapper {
+    padding-left: 8px;
+}
+
+.logo {
+    margin: 10px 0;
+    width: 48px;
+}
+
+.person {
+    padding-right: 8px;
+}
+
+.person-name {
+    color: #bbb;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.person-title {
+    color: #888;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.125rem;
+}
+
+/************************************************
+ * 3:HERO IMAGE STYLES
+ ************************************************/
+.hero {
+    background: url("../img/water_sunset_360.png") #ddd center/cover no-repeat;
+    height: 50vh;
+    max-height: 260px;
+    min-height: 180px;
+}
+
+.hero-text {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    text-shadow: 0 0 4px rgba(255, 255, 0, 0.9);
+}
+
+/************************************************
+ * 4:MAIN QUOTE STYLES
+ ************************************************/
+.quote {
+    color: #aaa;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 1em 0;
+}
+
+/************************************************
+ * 5:FEATURE WORK STYLES
+ ************************************************/
+.feature-work {
+    background-color: #f1ecc1;
+    margin: 0 -15px;
+    padding: 0 15px;
+}
+
+.feature-group-title {
+    text-transform: uppercase;
+}
+
+.feature-group {
+    padding: 0 8px;
+}
+
+.feature-item {
+    margin-bottom: 1.5rem;
+    padding: 0 7px;
+}
+
+.feature-item-img {
+    width: 100%;
+}
+
+.feature-item-title {
+    margin-bottom: 0;
+    margin-top: 0.25rem;
+}
+
+/************************************************
+ * 6:FOOTER STYLES
+ ************************************************/
+footer {
+    background: #222;
+    border-top: 2px solid #888;
+    color: #888;
+    font-size: .85rem;
+}
+
+/*
+ * MEDIA QUERIES
+ *
+ * BOOTSTRAP BREAKPOINTS
+ * xs 360px
+ * sm 576px
+ * md 768px
+ * lg 992px
+ * xl 1200px
+ */
+/************************************************
+ * BOOTSTRAP BREAKPOINT - xs
+ ************************************************/
+@media (min-width: 360px) {
+    .hero {
+        background: url("../img/water_sunset_576.png") #ddd center/cover no-repeat;
+        max-height: 360px;
+        min-height: 200px;
+    }
+
+    .hero-text {
+        font-size: 3.50rem;
+        text-shadow: 0 0 6px rgba(255, 255, 0, 0.9);
+    }
+
+    .quote {
+        font-size: 1.1rem;
+        margin: 1.5em 1em;
+    }
+}
+
+/************************************************
+ * BOOTSTRAP BREAKPOINT - xs
+ ************************************************/
+@media (min-width: 576px) {
+    .logo-wrapper {
+        padding-left: 15px;
+    }
+
+    .logo {
+        margin: 15px 0;
+        width: 72px;
+    }
+
+    .person {
+        padding-right: 15px;
+    }
+
+    .person-name {
+        color: #bbb;
+        font-size: 2.2rem;
+        font-weight: 300;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .person-title {
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        max-height: 570px;
+        min-height: 350px;
+    }
+
+    .hero {
+        background: url("../img/water_sunset_768.png") #ddd center/cover no-repeat;
+        max-height: 400px;
+        min-height: 260px;
+    }
+
+    .hero-text {
+        font-size: 4.50rem;
+        text-shadow: 0 0 8px rgba(255, 255, 0, 0.9);
+    }
+
+    .quote {
+        font-size: 1.2rem;
+        margin: 3em 2em;
+    }
+}
+
+/************************************************
+ * BOOTSTRAP BREAKPOINT - md
+ ************************************************/
+@media (min-width: 768px) {
+    .hero {
+        background: url("../img/water_sunset_1200.png") #ddd center/cover no-repeat;
+        max-height: 570px;
+        min-height: 350px;
+    }
+
+    .hero-text {
+        font-size: 5.5rem;
+        text-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+    }
+
+    .quote {
+        font-size: 1.25rem;
+        margin: 3em 3em;
+    }
+
+    .feature-work {
+        background-color: inherit;
+    }
+
+    .feature-group-title {
+        text-transform: none;
+    }
+}
+
+/************************************************
+ * BOOTSTRAP BREAKPOINT - lg
+ ************************************************/
+@media (min-width: 992px) {
+    .hero-text {
+        font-size: 6rem;
+        text-shadow: 0 0 12px rgba(255, 255, 0, 0.9);
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        margin: 3em 4em;
+    }
+
+    .feature-item-link {
+        font-size: 0.9rem;
+    }
+}
+
+/************************************************
+ * BOOTSTRAP BREAKPOINT - xl
+ ************************************************/
+@media (min-width: 1200px) {
+    .hero-text {
+        font-size: 7rem;
+    }
+
+    .quote {
+        font-size: 1.75rem;
+        margin: 3.5em 5em;
+    }
+}
